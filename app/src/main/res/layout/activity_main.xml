@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aerserv.aerservcore_inmobiadapter.MainActivity">
+
+
+    <EditText
+        android:id="@+id/plc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="number"
+        android:hint="Enter plc..."/>
+    <Button
+        android:id="@+id/btnBanner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/plc"
+        android:onClick="loadBanner"
+        android:text="@string/btn_banner"/>
+
+    <Button
+        android:id="@+id/killBanner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnBanner"
+        android:onClick="killBanner"
+        android:text="Kill Banner"/>
+    <Button
+        android:id="@+id/btnInterstitial"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/killBanner"
+        android:onClick="loadInterstitial"
+        android:text="@string/btn_interstitial"/>
+
+
+
+
+    <!-- Add to your layout XML to hold an AerservBanner view -->
+    <com.aerserv.sdk.AerServBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+
+
+</RelativeLayout>

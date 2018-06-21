@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AerServCore_InMobiAdapter</string>
+    <string name="btn_interstitial">Interstitial</string>
+    <string name="btn_banner">Banner</string>
+</resources>
